@@ -383,7 +383,7 @@ class Field(MaltegoElement):
     hidden = fields_.Boolean(default=False)
     readonly = fields_.Boolean(default=False)
     description = fields_.String(required=False)
-    displayname = fields_.String(attrname='displayName')
+    displayname = fields_.String(attrname='displayName', required=False)
     defaultvalue = fields_.String(tagname='DefaultValue', required=False)
     samplevalue = fields_.String(tagname='SampleValue', default='')
 
